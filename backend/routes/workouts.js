@@ -12,13 +12,11 @@ const router = express.Router()
 //  get all workouts
 router.get('/', getAllWorkouts)
 
-
 // get a single workouts
 router.get('/:id',getworkout)
 
 // POST a new workouts
 router.post('/',createWorkout)
-
 
 // DELETE a new workouts
 +router.delete('/:id',(deleteWorkout))
