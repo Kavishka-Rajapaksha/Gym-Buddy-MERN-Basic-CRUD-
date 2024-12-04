@@ -4,9 +4,9 @@ const WorkoutsDetails = ({ workout }) => {
 
     const { dispatch } = useWorkoutsContext()
 
-    const handlerClick = async () =>{
+    const handleClick = async () =>{
         const response = await fetch('/api/workouts/'+ workout._id, {
-            method: 'DELETE'
+            method: 'DELETE' 
         })
 
         const json = await response.json()
@@ -22,7 +22,7 @@ const WorkoutsDetails = ({ workout }) => {
             <p><strong>Load (kg): </strong>{workout.load}</p>
             <p><strong>Reps: </strong>{workout.reps}</p>
             <p>{workout.createdAt}</p>
-            <span onClick = {handlerClick}>Delete</span>
+            <span onClick = {handleClick}>Delete</span>
         </div> // Properly close the div here
     );
 };
