@@ -22,7 +22,7 @@ const Home =()=>{
         };
     
         fetchWorkouts(); // Call the function
-    }, []);
+    }, [dispatch]);
     
 
     return(

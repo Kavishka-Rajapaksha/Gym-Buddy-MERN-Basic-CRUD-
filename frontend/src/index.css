@@ -95,4 +95,9 @@ div.error {
   border: 1px solid var(--error);
   color: var(--error);
   border-radius: 4px;
-  margin: 20px 0;}
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error); /* Highlight border in red */
+  background-color: #ffe6e6; /* Light red background for better visibility */
+}
